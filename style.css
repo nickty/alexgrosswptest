@@ -1,0 +1,13 @@
+/**
+Theme Name: Alex Gross theme
+Author: Mizanur Rahman
+**/
+
+/* my custom code */
+
+.our-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+}
