@@ -5,6 +5,10 @@ Author: Mizanur Rahman
 
 /* my custom code */
 
+body {
+    font-family: 'Roberto', Times, serif;
+}
+
 .our-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,4 +19,30 @@ Author: Mizanur Rahman
 /* teaser section */
 .teaser-section{
     background: #F0F0F0 0% 0% no-repeat padding-box;
+}
+
+/* footer section */
+.footer { 
+    min-height: 183px;
+    background: #6E6E6E 0% 0% no-repeat padding-box; 
+}
+
+.mymenuclass {
+    text-align: right;
+}
+.mymenuclass li{
+    margin-right: 35px;
+    font-size: 18px;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.nav-link {
+    color: black;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

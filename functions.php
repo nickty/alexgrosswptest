@@ -23,3 +23,23 @@ function load_js()
 }
 
 add_action( 'wp_enqueue_scripts', 'load_js' );
+
+
+if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
+
+	function mytheme_register_nav_menu(){
+		register_nav_menus( array(
+	    	'primary_menu' => __( 'Primary Menu', 'text_domain' ),
+	    	'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
+		) );
+	}
+	add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 );
+}
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
