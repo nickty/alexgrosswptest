@@ -11,3 +11,8 @@ Author: Mizanur Rahman
     min-height: 600px;
     position: relative;
 }
+
+/* teaser section */
+.teaser-section{
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+}
