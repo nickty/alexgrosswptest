@@ -5,8 +5,11 @@ Author: Mizanur Rahman
 
 /* my custom code */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;1,100;1,400&display=swap');
+
+
 body {
-    font-family: 'Roberto', Times, serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .our-image {
@@ -18,7 +21,16 @@ body {
 
 /* teaser section */
 .teaser-section{
+    padding: 30px 0;
     background: #F0F0F0 0% 0% no-repeat padding-box;
+}
+.teaser-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teaser h2 {
+    font-size: 32px;
 }
 
 /* footer section */
@@ -45,4 +57,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.body-text p {
+    margin: 60px 0;
+    font-size: 18px;
+    color: #262626;
+}
+.teaser-section {
+    margin: 35px 0;
+}
+.freq {
+    margin-top: 143px;
+    margin-bottom: 76px;
+}
+.motoren {
+    margin: 76px 0;
+}
+.digital {
+    margin-bottom: 203px;
+}
+.btn {
+    background: #FF000F 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 18px 28px;
+}
+.btn:hover {
+        
+    background-color: none;
+    border-color: none;
+}
+.fleq-inner-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col-sm-4, .col-sm-8 {
+    /* flex: 0 0 auto; */
+    /* width: 31.333333%; */
 }
