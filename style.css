@@ -5,11 +5,32 @@ Author: Mizanur Rahman
 
 /* my custom code */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,400&display=swap');
+
 
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+body p {
+    font-weight: 300;
+}
+body h2 {
+    font-size: 32px;
+}
+.freq img, .three-columns img, .geba img, .motoren img, .digital img {
+    width: 100%;
+}
+.dropdown-toggle::after {
+    
+    border: solid #FF000F;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    top: 2px;
+  -webkit-transform: rotate(45deg);
+      
 }
 
 .our-image {
@@ -17,8 +38,23 @@ body {
     background-size: cover;
     min-height: 600px;
     position: relative;
+    display: flex;
 }
-
+.flexx {
+    flex: 1;
+}
+.hero-text {
+    margin-top: 206px;
+    color: #F0F0F0;
+}
+.text-bold {
+    font-weight: bold;
+    font-size: 48px;
+}
+.hero_text {
+    font-weight: 300;
+    font-size: 48px;
+}
 /* teaser section */
 .teaser-section{
     padding: 30px 0;
@@ -30,7 +66,22 @@ body {
     align-items: center;
 }
 .teaser h2 {
+    
     font-size: 32px;
+}
+.b-icon{
+    color: #FF000F;
+    font-size: 30px;
+    margin-bottom: -30px;
+    margin-top: -19px;
+}
+.b-icon-large{
+    color: #FF000F;
+    font-size: 50px;
+    margin-bottom: -30px;
+}
+.teaser-image{
+    margin-left: -180px;
 }
 
 /* footer section */
@@ -53,15 +104,12 @@ body {
     color: black;
 }
 
-.hero-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .body-text p {
     margin: 60px 0;
     font-size: 18px;
     color: #262626;
+    font-weight: 300;
 }
 .teaser-section {
     margin: 35px 0;
@@ -99,4 +147,38 @@ body {
 .col-sm-4, .col-sm-8 {
     /* flex: 0 0 auto; */
     /* width: 31.333333%; */
+}
+
+/* footer */
+.foot-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+.myfootermenuclass li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+.myfootermenuclass li a {
+    text-decoration: none;
+    color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.inner-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-brands img{
+    margin-right: 10px;
+}
+.copyright {
+    color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: right;
 }

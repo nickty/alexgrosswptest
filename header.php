@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
@@ -28,5 +32,7 @@
             'walker'            => new WP_Bootstrap_Navwalker(),
         ) );
         ?>
+      <img src="http://localhost/alexgross/wp-content/uploads/2022/11/homelogo.png" alt="" />  
     </div>
+    
 </nav>

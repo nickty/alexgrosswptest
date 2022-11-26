@@ -1,18 +1,27 @@
 <?php get_header(); ?>
 
 <div class="hero">
-    <?php if(get_field('img')): ?>
-        <div style="background-image: url('<?php the_field('img'); ?>');" class="our-image" />
-        <?php if(get_field('hero_text')): ?>
-            <div class="hero-text">
-                <h3 class="hero-tdext">
-                    <?php the_field('hero_text'); ?>
-                </h3>
-                
+   
+        <?php if(get_field('img')): ?>
+            <div style="background-image: url('<?php the_field('img'); ?>');" class="our-image img-fluid">
+            <div class="container flexx">
+            <?php if(get_field('hero_header')): ?>
+                <div class="hero-text">
+                <i class="bi bi-dash-lg b-icon-large"></i>
+                    <h3 class="text-bold">
+                        <?php the_field('hero_header'); ?>
+                    </h3>
+                    <h3 class="hero_text">
+                        <?php the_field('hero_text'); ?>
+                    </h3>
+                    
+                </div>
+                <?php endif; ?>
+                </div>
             </div>
-            <?php endif; ?>
-        </div>
-    <?php endif; ?>
+            </div>
+        <?php endif; ?>
+    
 </div>
 
 <div class="container">
@@ -36,18 +45,18 @@
             <div class="col-sm-4">
                 <div class="teaser">
                     <?php if(get_field('title')): ?>
-       
+                        <i class="bi bi-dash-lg b-icon"></i>
                         <div>
                             <h2><?php the_field('title'); ?></h2>
                         </div>
                     <?php endif; ?>
                 </div>
-                <img src="<?php the_field('mobile-image'); ?>" alt="" srcset="">
+                <img class="teaser-image" src="<?php the_field('mobile-image'); ?>" alt="" srcset="">
             </div>
             <div class="col-sm-8">
-                <?php the_field('teaser-body'); ?>
             
-            
+                <p><?php the_field('teaser-body'); ?></p>
+                       
                 <div>
                     <button  class="btn mt-5"><?php the_field('btn-text'); ?></button>
                 </div>
@@ -59,12 +68,13 @@
 <section class="three-columns">
     <div class="container">
         <div class="header-3columns">
+        <i class="bi bi-dash-lg b-icon"></i>
         <h2 class="mb-3"><?php the_field('header'); ?></h2>
        
       <div class="row">
             <div class="col-sm-4">
                 <img src="<?php the_field('c1-image'); ?>" alt="" srcset="">
-                <h2>
+                <h2 class="mt-4">
                 <?php the_field('c1-title'); ?>
                 </h2>
                 <p>
@@ -74,7 +84,7 @@
             </div>
             <div class="col-sm-4">
                 <img src="<?php the_field('c2-image'); ?>" alt="" srcset="">
-                <h2>
+                <h2 class="mt-4">
                 <?php the_field('c2-title'); ?>
                 </h2>
                 <p>
@@ -84,7 +94,7 @@
             </div>
             <div class="col-sm-4">
                 <img src="<?php the_field('c3-image'); ?>" alt="" srcset="">
-                <h2>
+                <h2 class="mt-4">
                 <?php the_field('c3-title'); ?>
                 </h2>
                 <p>
@@ -106,6 +116,7 @@
                 
             </div>
             <div class="col-sm-8 fleq-inner-flex">
+            <i class="bi bi-dash-lg b-icon"></i>
                 <h2>
                 <?php the_field('frequenzumrichter-title'); ?>
                 </h2>
@@ -122,6 +133,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 fleq-inner-flex">
+            <i class="bi bi-dash-lg b-icon"></i>
                 <h2>
                 <?php the_field('gebaudeautomation-title'); ?>
                 </h2>
@@ -146,6 +158,7 @@
                 
             </div>
             <div class="col-sm-8 fleq-inner-flex">
+            <i class="bi bi-dash-lg b-icon"></i>
                 <h2>
                 <?php the_field('motoren-title'); ?>
                 </h2>
@@ -162,6 +175,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 fleq-inner-flex">
+            <i class="bi bi-dash-lg b-icon"></i>
                 <h2>
                 <?php the_field('digitalisierung-title'); ?>
                 </h2>
